@@ -173,15 +173,19 @@ public class VariablesJordy {
         Scanner entrada=new Scanner(System.in);
         System.out.println("Ingrese su edad: ");
         int edad=entrada.nextInt();
+        System.out.println("Ingrese su edad: ");
+        String nombre=entrada.nextLine();
+        System.out.println("Ingrese su edad: ");
+        String apellido=entrada.nextLine();
         
                    
         if (edad>0 && edad<120){
             if (edad>=0 && edad<=12){
-                System.out.println("eres un niño");
+                System.out.println(nombre+apellido+" eres un niño");
             }else if(edad>=13 && edad<=35){
-                System.out.println("eres un joven");
+                System.out.println(nombre+apellido+" eres un joven");
             }else{
-                System.out.println("eres un adulto");
+                System.out.println(nombre+apellido+" eres un adulto");
             }
         } else {
             System.out.println("Edad incorrecta");
